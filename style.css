@@ -1,0 +1,39 @@
+.flag{
+  background-color: #009443;
+  margin:20px;
+  width: 800px;
+  height: 600px;
+}
+
+/* ひし形（鋭） */
+#diamond-narrow {
+  width: 0;
+  height: 0;
+  border: 350px solid transparent;
+  border-bottom: 250px solid #F7E900;
+  position: relative;
+  margin:0 auto;
+  top:-300px;
+}
+#diamond-narrow:after {
+  content: '';
+  position: absolute;
+  left: -350px; top: 250px;
+  width: 0;
+  height: 0;
+  border: 350px solid transparent;
+  border-top: 250px solid #F7E900;
+}
+
+#symbol{
+  background-color: transparent;
+  background-image: url(symbol.png);
+  width: 300px;
+  height: 300px;
+  margin:0 auto;
+  position:relative;
+  top:100px;
+  left:-150px;
+  border-radius: 50%;
+  z-index:1;
+}
